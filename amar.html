@@ -1,0 +1,39 @@
+<script>
+    var data1={
+    name:"Amar",
+    place:"Goa",
+    skill:"singing",
+    skillOperate: function(){
+        console.log("Amar has"+" "+this.skill+" "+"skill")
+    },
+}
+
+var data2={
+    name:"Akbar",
+    place:"Mumbai",
+    skill:"chef",
+    skillOperate: function(){
+        console.log("Akbar has"+" "+this.skill+" "+"skill")
+    },
+}
+
+var data3={
+    name:"Anthony",
+    place:"Kashmir",
+    skill:"magician",
+    skillOperate: function(){
+        console.log("Anthony has"+" "+this.skill+" "+"skill")
+    },
+}
+
+data1.skillOperate.call(obj2)
+data1.skillOperate.call(obj3)
+
+
+data2.skillOperate.call(obj1)
+data2.skillOperate.call(obj3)
+
+
+data3.skillOperate.call(obj2)
+data3.skillOperate.call(obj1)
+</script>
